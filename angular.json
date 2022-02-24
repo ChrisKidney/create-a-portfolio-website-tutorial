@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-create-portfolio-tutorial": {
+    "angularcreateportfoliotutorial": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -41,11 +41,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-create-portfolio-tutorial",
+            "outputPath": "dist/angularcreateportfoliotutorial",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -62,8 +63,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "1000kb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -94,10 +95,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-create-portfolio-tutorial:build:production"
+              "browserTarget": "angularcreateportfoliotutorial:build:production"
             },
             "development": {
-              "browserTarget": "angular-create-portfolio-tutorial:build:development"
+              "browserTarget": "angularcreateportfoliotutorial:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,7 +106,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-create-portfolio-tutorial:build"
+            "browserTarget": "angularcreateportfoliotutorial:build"
           }
         },
         "test": {
@@ -128,5 +129,5 @@
       }
     }
   },
-  "defaultProject": "angular-create-portfolio-tutorial"
+  "defaultProject": "angularcreateportfoliotutorial"
 }

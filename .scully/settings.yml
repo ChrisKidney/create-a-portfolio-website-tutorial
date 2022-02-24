@@ -1,0 +1,15 @@
+identifier: lc0915kd6et90fe1
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: angularcreateportfoliotutorial
+homeFolder: >-
+  G:\Development\NSCC\Year 2\Winter 2022\ICOM3010 - Self-Directed
+  Study\tutorials\angularcreateportfoliotutorial
+distFolder: dist/angularcreateportfoliotutorial
+outDir: >-
+  G:\Development\NSCC\Year 2\Winter 2022\ICOM3010 - Self-Directed
+  Study\tutorials\angularcreateportfoliotutorial\dist\static\
+handle404: ''
+allowErrorCollect: false
